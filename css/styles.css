@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fbfbfb;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: #fbfbfb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    position: fixed;
+    padding: 20px;
+}
+
+.logo {
+    width: 75px;
+    border-radius: 50%;
+}
+
+/* Para quitar los puntos a los items de listas */
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+li.menu-item:hover,
+li.menu-item .active,
+a.btn:hover {
+    background-color: rgba(175, 89, 158, 0.3);
+    transition: 0, 3;
+    border-radius: 5px;
+}
+
+header a {
+
+    padding: 0 10px;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+
+a {
+    text-decoration: none;
+    color: inherit;
+    border: 50px;
+}
+
+#inicio,
+#contacto {
+    max-width: 1200px;
+    min-height: 100vh;
+    padding: 100px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.soy-jus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio img {
+    border-radius: 50%;
+    width: 400px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+p {
+    padding: 20px 50px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.soy-jus a {
+    background-color: #af599e;
+    color: #fbfbfb;
+    font-size: 20px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ************************************ */
+
+.hablemos {
+    background-color: rgba(175, 89, 158, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    padding: 20px 0;
+}
+
+.iconos ul {
+    list-style: none;
+    margin-top: 30px;
+    gap: 70px;
+    display: flex;
+}
+
+.iconos li {
+    display: inline;
+    justify-content: space-evenly;
+}
+
+.iconos img {
+    width: 60px;
+}
+
+.iconos img:hover {
+
+    border: solid;
+    background-color: rgba(175, 89, 158, 0.3);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #af599e;
+    color: #fbfbfb;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        margin: 0;
+        background-image: linear-gradient(0deg,
+                rgba(255, 255, 255, 0.9),
+                rgba(250, 250, 250, 0.9)),
+            url("../img/Technology.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #inicio {
+        flex-direction: row;
+    }
+
+    #inicio img {
+        border: solid;
+        border-color: rgb(124, 123, 123);
+    }
+
+    .soy-jus {
+        width: 50%;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .soy-jus p {
+        display: flex;
+        text-align: left;
+    }
+p {
+    font-weight:500 ;
+}
+    h1 {
+        font-size: 48px;
+        margin-left: 45px;
+    }
+
+    .soy-jus a {
+        margin: 45px 45px;
+    }
+
+    #contacto {
+        min-height: 10vh;
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
